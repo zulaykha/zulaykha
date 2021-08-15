@@ -1,0 +1,94 @@
+* {
+	box-sizing: border-box;
+}
+
+ html{
+ 	font-size: 62.5%
+ }
+
+body{
+	background-color: hsl(185,75%,39%);
+	background-image: url(bg-pattern-top.svg), url(bg-pattern-bottom.svg);
+	background-repeat: no-repeat, no-repeat;
+	background-position: left top, right bottom;
+	background-size: 300px, 300px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	text-align: center;
+	font-family: "Kumbh Sans", sans-serif;	
+}
+
+.container{
+	background-image: url(bg-pattern-card.svg);
+	background-color: #fff;
+	background-repeat: repeat-x;
+	border-radius: 15px;
+	width: 400px;
+	max-width: 100%;
+	height: auto;
+	font-size: 2rem;
+}
+
+span{
+	margin-left: 5px;
+}
+
+.top-part{
+	margin-top: 100px;
+}
+
+.top-part >p {
+  color: hsl(229,23%,23%);
+  font-weight: 700;
+}
+
+p:last-child,
+span {
+	color: hsl(0, 0%, 59%);
+	font-weight: 400
+}
+
+.top-part .img {
+	border-radius: 50%;
+	padding: 5px;
+	background: #fff;
+	object-fit: cover;
+	width: auto;
+	height: auto;
+}
+
+.bottom-part {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	gap:40px;
+	padding: 5px;
+}
+
+.bottom-part div > p:nth-child(1) {
+   color: hsl(229, 23%, 23%);
+   font-weight: 700
+}
+
+.bottom-part div > p:nth-child(2) {
+	font-size: 1.5rem;
+}
+
+.attribution{
+	color: hsl(229, 23%, 23%);
+	margin-top: 10px;
+	font-size: 1.2rem;
+}
+
+@media screen and (max-width: 375px) {
+	body{
+		background-size: 100px, 100px;
+	}
+
+}
+}
